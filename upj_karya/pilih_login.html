@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <style>
+        @font-face {
+           font-family: Montserrat-B;
+           src: url("../public/font/Montserrat-Bold.ttf");
+        }
+        @font-face {
+           font-family: Montserrat-Med;
+           src: url("../public/font/Montserrat-Medium.ttf");
+        }
+	    *{
+	     font-family: Montserrat-B;
+        }
+	    .bg {
+         background-image: url("upjbg2.png");
+         height: 100%;
+         margin-top:40px; 
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
+       }
+       .button{
+           padding: 15px;
+           padding-left: 20px;
+           padding-right: 20px;
+           border-radius: 20px;
+           background-color: #2D539C;
+           color: white;
+           border: none;
+           outline: none;
+       }
+       .button:hover {
+           background-color: #4CAF50;
+           cursor: pointer;
+        }
+    </style>
+</head>
+
+<body class="bg">
+    <div style="display:flex; flex-direction:column; justify-content: center; align-items: center; font-size: 40px;">
+        <div>Login sebagai...</div>
+        <div style="margin-top: 70px; display: flex; justify-content: space-around; width: 1000px; font-size: 20px; font-family: Montserrat-Med;">
+            <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; width: 300px; height: 300px; padding: 50px; border-radius: 20px; background-color: rgb(255, 255, 255, .5); ">
+                <p style="font-family: Montserrat-Med; text-align: center;">Untuk kamu yang ingin membaca artikel</p>
+                <button class="button" onclick="document.location.href='/projeksbd/upj_karya/login.php'">Login sebagai user</button>
+            </div>
+            <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; width: 300px; height: 300px; padding: 50px; border-radius: 20px; background-color: rgb(255, 255, 255, .6);">
+                <p style="font-family: Montserrat-Med; text-align: center;">Untuk mahasiswa/i UPJ yang ingin membagikan tulisannya</p>
+                <button class="button" onclick="document.location.href='/projeksbd/upj_karya/loginAuthor.php'">Login sebagai author</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

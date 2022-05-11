@@ -1,0 +1,101 @@
+@import "artikel.css";
+  @import "homepage.css";
+  @import "navbar-footer.css";
+  @import "artikel.css";
+  
+  
+  @font-face {
+    font-family: Montserrat;
+    src: url(/font/Montserrat-Regular.ttf);
+  }
+
+  @font-face {
+    font-family: Montserrat-Bold;
+    src: url(/font/Montserrat-ExtraBold.ttf);
+  }
+
+  @font-face {
+    font-family: Montserrat-B;
+    src: url(/font/Montserrat-Bold.ttf);
+  }
+
+  @font-face {
+    font-family: Montserrat-Med;
+    src: url(/font/Montserrat-Medium.ttf);
+  }
+
+  * {
+    transition: background-color 0.2s;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html, body {
+    display: flex;
+    height: max-content;
+    flex-flow: column wrap;
+    justify-content: center;
+    background-color: #e5e5e5;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    min-width: 100%;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s;
+  }
+
+  a:hover {
+    color: #0082C6;
+  }
+
+  /* Scroll Bar */
+  /* width */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 6px
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #15202B;
+    border-radius: 6px
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #15202B;
+    border-radius: 6px
+  }
+
+  .berita{
+    margin-left: 100px;
+    width: 1051px;
+    padding-right: 50px;
+    /* box-shadow: 1.5px 0 0 0 #C4C4C4; */
+    overflow: auto;
+    height: 550px;
+}
+
+  /* Scroll Bar */
+/* 
+  .sepak-bola {
+    height: 16px;
+    margin-left: 90px;
+    font-family: Montserrat-B;
+    font-size: 14px;
+    color: red;
+    font-weight: 600;
+    margin-top: 2px;
+}
+   */
